@@ -25,7 +25,7 @@ class BASESCRIPT_API Script
 public:
 	void SetEnvironment(ScriptInterface* si);
 
-	void Update();
+	virtual void Update();
 
 protected:
 	ScriptInterface * m_interface;
