@@ -9,8 +9,8 @@ void Script::SetEnvironment(ScriptInterface* si)
 void Script::Update()
 {
 	m_interface->Log();
-	GameObject *go = m_interface->GetGameObject();
-	std::cout << go->position << std::endl;
+	//GameObject *go = m_interface->GetGameObject();
+	//std::cout << go->position << std::endl;
 	std::cout << "update" << std::endl;
 }
 
