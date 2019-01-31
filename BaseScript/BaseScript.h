@@ -7,17 +7,30 @@
 #define BASESCRIPT_API __declspec(dllimport)
 #endif
 
-struct GameObject
+//struct GameObject
+//{
+//	int position = 5;
+//	int scale = 1;
+//};
+
+class BASESCRIPT_API TransformInterface
 {
-	int position = 5;
-	int scale = 1;
+public:
+	virtual void GetPosition() = 0;
+	virtual void SetPosition(int x, int y, int z) = 0;
+};
+
+class BASESCRIPT_API GameObjectInterface
+{
+public:
+	virtual TransformInterface GetTransform() = 0;
 };
 
 class BASESCRIPT_API ScriptInterface
 {
 public:
 	virtual void Log() = 0;
-	virtual GameObject* GetGameObject() = 0;
+	//virtual GameObject* GetGameObject() = 0;
 };
 
 class BASESCRIPT_API Script
