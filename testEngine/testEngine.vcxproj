@@ -156,7 +156,7 @@
     <ClCompile Include="testEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Globals.h" />
+    <ClInclude Include="Application.h" />
     <ClInclude Include="ScriptInterfaceImpl.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
